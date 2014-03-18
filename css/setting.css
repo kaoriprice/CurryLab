@@ -1,0 +1,14 @@
+/* line 13, ../scss/setting.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 16, ../scss/setting.scss */
+.sefit {
+  font-family: "Lucida Bright", Georgia, serif;
+}
+
+/* line 19, ../scss/setting.scss */
+.sans-serif {
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+}

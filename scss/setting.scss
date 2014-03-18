@@ -1,0 +1,21 @@
+$font-xs: 13px;
+$font-s: 17px;
+$font-m: 23px;
+$font-l: 30px;
+$font-xl: 41px;
+
+
+$serif: "Lucida Bright", Georgia, serif;
+//$sans-serif: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+//$sans-serif: Futura, "Trebuchet MS", Arial, sans-serif;
+$sans-serif: Geneva, Tahoma, Verdana, sans-serif;
+
+a{
+	text-decoration:none;
+}
+.sefit{
+	font-family:$serif 
+}
+.sans-serif{
+	font-family: $sans-serif;
+}
