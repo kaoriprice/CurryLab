@@ -1,8 +1,12 @@
-$font-xs: 13px;
-$font-s: 17px;
-$font-m: 23px;
-$font-l: 30px;
-$font-xl: 41px;
+$xs: 13px;
+$s: 17px;
+$m: 23px;
+$l: 30px;
+$xl: 41px;
+
+
+$black:rgba(51,51,51,1);
+$white:rgba(255,255,255,1);
 
 
 $serif: "Lucida Bright", Georgia, serif;
@@ -12,10 +16,4 @@ $sans-serif: Geneva, Tahoma, Verdana, sans-serif;
 
 a{
 	text-decoration:none;
-}
-.sefit{
-	font-family:$serif 
-}
-.sans-serif{
-	font-family: $sans-serif;
 }

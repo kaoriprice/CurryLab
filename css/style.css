@@ -63,19 +63,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 13, ../scss/setting.scss */
+/* line 17, ../scss/setting.scss */
 a {
   text-decoration: none;
-}
-
-/* line 16, ../scss/setting.scss */
-.sefit {
-  font-family: "Lucida Bright", Georgia, serif;
-}
-
-/* line 19, ../scss/setting.scss */
-.sans-serif {
-  font-family: Geneva, Tahoma, Verdana, sans-serif;
 }
 
 /* line 4, ../scss/style.scss */
@@ -90,6 +80,12 @@ a {
 }
 
 /* line 11, ../scss/style.scss */
+html {
+  border-right: 10px solid #333333;
+  border-left: 10px solid #333333;
+}
+
+/* line 15, ../scss/style.scss */
 body {
   background-image: url("../img/restaurant.jpg");
   background-size: 100%;
@@ -98,30 +94,25 @@ body {
   background-position: center;
 }
 
-/* line 18, ../scss/style.scss */
-.wrapper__above {
-  position: relative;
-  z-index: 10;
-}
-
-/* line 21, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
 .wrapper {
-  margin: 0px 10px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-/* line 24, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 .header {
+  display: inline-block;
   position: fixed;
   top: 0px;
-  left: 0px;
+  left: 10px;
   z-index: 100;
-  min-height: 110px;
-  display: inline-block;
-  width: 100%;
-  font-family: "Lucida Bright", Georgia, serif;
-  background-color: #333;
+  width: calc(100% - 20px);
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  background-color: #333333;
   border-bottom: 1px solid #f0f0f0;
   padding: 0 10px;
+  padding-left: 0;
 }
 /* line 33, ../scss/style.scss */
 .header a {
@@ -130,227 +121,206 @@ body {
 
 /* line 37, ../scss/style.scss */
 .header__logo {
+  display: inline-block;
+  float: left;
   color: #fff;
   font-size: 13px;
   text-align: center;
-  line-height: 90px;
+  line-height: 70px;
   background-color: #000;
   padding: 0 10px;
-  margin: 10px 0;
-  display: inline-block;
-  float: left;
+  margin-right: 20px;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 .header__nav {
+  display: inline-block;
   float: left;
-  padding-top: 40px;
-  display: inline-block;
-}
-/* line 48, ../scss/style.scss */
-.header__nav ul, .header__nav li, .header__nav .header__nav__item {
-  display: inline-block;
 }
 
-/* line 52, ../scss/style.scss */
+/* line 46, ../scss/style.scss */
 .header__nav__item {
-  font-size: 23px;
+  font-size: 17px;
+  line-height: 70px;
   margin-right: 20px;
   color: #fff;
   text-align: center;
-}
-/* line 56, ../scss/style.scss */
-.header__nav__item:first-child {
-  margin-left: 20px;
+  display: inline-block;
 }
 
-/* line 60, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .header__nav__item--small {
   font-size: 17px;
   font-variant: small-caps;
 }
 
-/* line 63, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 .header__section {
   float: right;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 13px;
-  font-family: "Lucida Bright", Georgia, serif;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
   color: #fff;
 }
-/* line 66, ../scss/style.scss */
-.header__section .header__section--social {
-  float: right;
+/* line 57, ../scss/style.scss */
+.header__section .header__section__social {
   text-align: center;
+  float: right;
   background-color: #000;
   margin-top: 10px;
   width: 20px;
   height: 20px;
 }
 
-/* line 74, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 .message {
-  margin-top: 110px;
-  font-family: Geneva, Tahoma, Verdana, sans-serif;
-  font-size: 13px;
   position: relative;
-  padding: 10px;
-  background-color: #333;
+  margin-top: 70px;
   color: #fff;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  padding: 20px 10px;
 }
-/* line 82, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .message::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 180px;
+  height: 110px;
   width: 100%;
-  background-color: #333;
+  background-color: #333333;
   z-index: -1;
 }
 
-/* line 90, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 .message__content {
   padding-left: 10px;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .hero {
-  background-color: white;
-  position: relative;
-}
-
-/* line 98, ../scss/style.scss */
-.slider {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 10px;
 }
 
-/* line 102, ../scss/style.scss */
-.slider__wrapper {
+/* line 83, ../scss/style.scss */
+.hero__slider {
   background-color: #e6e6e6;
   width: 100%;
-  display: table;
 }
 
-/* line 107, ../scss/style.scss */
-.slider__image {
+/* line 87, ../scss/style.scss */
+.hero__slider__image {
   width: 65%;
-  float: left;
-  display: table-cell;
+  display: inline-block;
+  vertical-align: middle;
 }
 @media (max-width: 768px) {
-  /* line 107, ../scss/style.scss */
-  .slider__image {
+  /* line 87, ../scss/style.scss */
+  .hero__slider__image {
     width: 100%;
   }
 }
 
-/* line 115, ../scss/style.scss */
-.slider__message__wrapper {
+/* line 95, ../scss/style.scss */
+.hero__slider__message {
   padding: 20px;
-  width: 35%;
-  float: left;
-  display: table-cell;
+  width: calc(35% - 20px);
+  display: inline-block;
   vertical-align: middle;
+  font-size: 41px;
   line-height: 61.5px;
 }
 @media (max-width: 768px) {
-  /* line 115, ../scss/style.scss */
-  .slider__message__wrapper {
+  /* line 95, ../scss/style.scss */
+  .hero__slider__message {
     width: 100%;
+    text-align: center;
+    line-height: 41px;
   }
 }
-
-/* line 126, ../scss/style.scss */
-.slider__message {
-  font-size: 41px;
-}
-
-/* line 129, ../scss/style.scss */
-.slider__message__span {
-  display: block;
+/* line 104, ../scss/style.scss */
+.hero__slider__message .hero__slider__message__span {
   font-size: 17px;
+  line-height: 0;
 }
 
-/* line 133, ../scss/style.scss */
-.hero__sub {
-  position: relative;
+/* line 108, ../scss/style.scss */
+.hero__welcome {
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  display: inline-block;
   padding: 10px;
-}
-
-/* line 137, ../scss/style.scss */
-.hero__sub__welcome {
   width: 65%;
-  float: left;
 }
 @media (max-width: 640px) {
-  /* line 137, ../scss/style.scss */
-  .hero__sub__welcome {
+  /* line 108, ../scss/style.scss */
+  .hero__welcome {
     width: 100%;
   }
 }
 
-/* line 144, ../scss/style.scss */
-.hero__sub__welcome--title, .hero__sub__take-away--title {
-  padding: 0 10px;
+/* line 117, ../scss/style.scss */
+.hero__welcome__heading, .hero__takeAway__heading {
   font-size: 23px;
+  line-height: 46px;
   font-weight: bold;
-  display: inline-block;
 }
 
-/* line 150, ../scss/style.scss */
-.hero__sub__welcome--content, .hero__sub__take-away--content {
-  padding: 10px;
-  width: calc(100% - 120px);
-  float: left;
+/* line 120, ../scss/style.scss */
+.hero__welcome__content, .hero__takeAway__content {
   font-size: 17px;
-  line-height: 25.5px;
+  line-height: 17px;
+  width: calc(100% - 110px);
+  display: inline-block;
+  float: left;
 }
 
-/* line 157, ../scss/style.scss */
-.hero__sub__welcome--image {
+/* line 125, ../scss/style.scss */
+.hero__welcome__image {
   width: 100px;
   float: right;
-  margin: 10px;
 }
 
-/* line 162, ../scss/style.scss */
-.hero__sub__take-away {
-  width: 35%;
-  float: right;
+/* line 130, ../scss/style.scss */
+.hero__takeAway {
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  display: inline-block;
+  padding: 0 10px;
+  width: calc(35% - 4px);
 }
 @media (max-width: 640px) {
-  /* line 162, ../scss/style.scss */
-  .hero__sub__take-away {
+  /* line 130, ../scss/style.scss */
+  .hero__takeAway {
     width: 100%;
-    padding-bottom: 10px;
   }
 }
 
-/* line 173, ../scss/style.scss */
-.hero__sub__take-away--content {
+/* line 142, ../scss/style.scss */
+.hero__takeAway__content {
   width: 100%;
 }
 
-/* line 177, ../scss/style.scss */
-.hero__sub__take-away--phone {
+/* line 146, ../scss/style.scss */
+.hero__takeAway__phone {
   display: inline-block;
   float: right;
+  padding: 0 17px;
+  margin-right: -20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
   font-size: 17px;
   line-height: 34px;
-  font-style: italic;
-  padding: 0 17px;
-  margin-right: -10px;
-  color: #fff;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   font-weight: bold;
+  font-style: italic;
   letter-spacing: 1px;
-  background-color: #333;
+  background-color: #333333;
 }
 
-/* line 190, ../scss/style.scss */
+/* line 153, ../scss/style.scss */
 .arrow {
   content: "";
   width: 70px;
@@ -359,9 +329,8 @@ body {
   margin: 0 auto;
 }
 
-/* line 196, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 .arrow__message {
-  color: #fff;
   font-size: 13px;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
   text-align: center;
@@ -369,212 +338,307 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 200, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .curry__steps {
   line-height: 70px;
   text-align: center;
-  background-color: #f0f0f0;
+  font-size: 23px;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  background-color: white;
+  background-color: #333333;
 }
-/* line 205, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .curry__steps ol li {
   display: inline-block;
   font-size: 17px;
-  color: #333;
+  color: #fff;
 }
 
-/* line 210, ../scss/style.scss */
+/* line 172, ../scss/style.scss */
 .curry {
   width: 100%;
+  border-left: 10px solid rgba(255, 255, 255, 0.9);
+  border-right: 10px solid rgba(255, 255, 255, 0.95);
+  padding-bottom: 70px;
+  background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
 }
 
-/* line 214, ../scss/style.scss */
-.curry__sauce, .curry__ingredients, .curry__side {
-  padding-top: 70px;
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.9);
-  width: calc(100% - 20px);
+/* line 178, ../scss/style.scss */
+.curry__wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
-/* line 220, ../scss/style.scss */
-.curry__sauce__header, .curry__ingredients__header, .curry__side__header {
-  display: inline-block;
-  width: 50%;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+/* line 182, ../scss/style.scss */
+.curry__header {
   position: relative;
+  display: inline-block;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  margin: 70px 0 20px 0;
+  padding: 0 10px;
 }
 
-/* line 227, ../scss/style.scss */
-.curry__sauce__header--number, .curry__ingredients__header--number, .curry__side__header--number {
+/* line 187, ../scss/style.scss */
+.curry__header__number {
   position: absolute;
   top: -28px;
   left: calc(50% - 20px);
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #333333;
   font-size: 23px;
-  line-height: 23px;
-  padding: 7px 0;
+  line-height: 40px;
   width: 40px;
 }
 
-/* line 234, ../scss/style.scss */
-.curry__sauce__header--title, .curry__ingredients__header--title, .curry__side__header--title {
+/* line 194, ../scss/style.scss */
+.curry__header__header {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 23px;
+  padding-top: 30px;
 }
 
-/* line 238, ../scss/style.scss */
-.curry__sauce__header--content, .curry__ingredients__header--content, .curry__side__header--content {
+/* line 198, ../scss/style.scss */
+.curry__header__content {
+  color: #666;
   font-size: 17px;
   line-height: 30px;
   font-style: italic;
-  color: #666;
-  padding-bottom: 23px;
+  padding-bottom: 17px;
 }
 
-/* line 243, ../scss/style.scss */
-.curry__sauce__item__wrapper, .curry__ingredients__group__wrapper, .curry__side__item__wrapper {
-  width: 100%;
-  padding: 10px;
-  margin-top: 40px;
-}
-
-/* line 248, ../scss/style.scss */
-.curry__sauce__item, .curry__side__item {
+/* line 203, ../scss/style.scss */
+.curry__sauce__item {
   width: 25%;
-  padding: 10px;
+  padding: 20px;
   display: inline-block;
   float: left;
-  padding-bottom: 23px;
 }
-/* line 254, ../scss/style.scss */
-.curry__sauce__item a, .curry__side__item a {
-  color: #333;
+/* line 206, ../scss/style.scss */
+.curry__sauce__item a {
+  color: #333333;
 }
-/* line 257, ../scss/style.scss */
-.curry__sauce__item:hover, .curry__side__item:hover {
-  background-color: #333;
+/* line 209, ../scss/style.scss */
+.curry__sauce__item:hover {
+  background-color: #333333;
 }
-/* line 259, ../scss/style.scss */
-.curry__sauce__item:hover a, .curry__side__item:hover a {
+/* line 211, ../scss/style.scss */
+.curry__sauce__item:hover a {
   color: #fff;
 }
-@media (max-width: 640px) {
-  /* line 248, ../scss/style.scss */
-  .curry__sauce__item, .curry__side__item {
+@media (max-width: 768px) {
+  /* line 203, ../scss/style.scss */
+  .curry__sauce__item {
     width: 50%;
   }
 }
-
-/* line 267, ../scss/style.scss */
-.curry__sauce__item--image, .curry__side__item--image {
-  width: 100%;
-  box-sizing: content-box;
+@media (max-width: 320px) {
+  /* line 203, ../scss/style.scss */
+  .curry__sauce__item {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-/* line 271, ../scss/style.scss */
-.curry__sauce__item--title, .curry__ingredients__group__header--title, .curry__side__item--title {
+/* line 223, ../scss/style.scss */
+.curry__sauce__item--image {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* line 228, ../scss/style.scss */
+.curry__sauce__item__header, .curry__topping__group__header--header, .curry__side__item__header, .menu__group__header, .map__info h1 {
   font-size: 23px;
   line-height: 46px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
-/* line 275, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 .curry__sauce__item--content {
   font-size: 17px;
   line-height: 23px;
 }
 
-/* line 299, ../scss/style.scss */
-.curry__ingredients__group {
+/* line 236, ../scss/style.scss */
+.curry__topping__group {
   width: 25%;
   padding: 10px;
+  padding-top: 20px;
   display: inline-block;
   vertical-align: top;
+  float: left;
 }
 @media (max-width: 640px) {
-  /* line 299, ../scss/style.scss */
-  .curry__ingredients__group {
-    width: calc(50% - 5px);
+  /* line 236, ../scss/style.scss */
+  .curry__topping__group {
+    width: 50%;
   }
 }
 
-/* line 309, ../scss/style.scss */
-.curry__ingredients__group__header {
+/* line 246, ../scss/style.scss */
+.curry__topping__group--vegetable {
+  width: 50%;
+}
+@media (max-width: 640px) {
+  /* line 246, ../scss/style.scss */
+  .curry__topping__group--vegetable {
+    width: 100%;
+  }
+}
+/* line 251, ../scss/style.scss */
+.curry__topping__group--vegetable .curry__topping__group__content__item {
+  width: calc(50% - 20px);
+  display: inline-block;
+  float: left;
+}
+
+/* line 257, ../scss/style.scss */
+.curry__topping__group__header {
   border: 1px solid #ccc;
   border-bottom: 0;
   width: 100%;
-  background-color: #fff;
 }
 
-/* line 315, ../scss/style.scss */
-.curry__ingredients__group__header--image {
+/* line 261, ../scss/style.scss */
+.curry__topping__group__header__image {
   margin: 23px;
   margin-bottom: 0;
 }
 
-/* line 322, ../scss/style.scss */
-.curry__ingredients__group__content {
+/* line 267, ../scss/style.scss */
+.curry__topping__group__content {
   width: 100%;
   border: 1px solid #ccc;
 }
 
-/* line 326, ../scss/style.scss */
-.curry__ingredients__group__content--item {
+/* line 271, ../scss/style.scss */
+.curry__topping__group__content__item {
   background-color: #fff;
   font-size: 17px;
   line-height: 46px;
-  padding: 0 23px;
   margin: 10px;
 }
-/* line 332, ../scss/style.scss */
-.curry__ingredients__group__content--item a {
-  color: #333;
+/* line 276, ../scss/style.scss */
+.curry__topping__group__content__item a {
+  color: #333333;
 }
-/* line 335, ../scss/style.scss */
-.curry__ingredients__group__content--item:hover {
-  background-color: #333;
+/* line 279, ../scss/style.scss */
+.curry__topping__group__content__item:hover {
+  background-color: #333333;
 }
-/* line 337, ../scss/style.scss */
-.curry__ingredients__group__content--item:hover a {
+/* line 281, ../scss/style.scss */
+.curry__topping__group__content__item:hover a {
   color: #fff;
 }
 
-/* line 361, ../scss/style.scss */
+/* line 286, ../scss/style.scss */
 .curry__side__item {
-  float: none;
-  display: inline-block;
+  width: 25%;
+  padding: 20px;
   vertical-align: top;
+  display: inline-block;
 }
-@media (max-width: 640px) {
-  /* line 361, ../scss/style.scss */
+/* line 289, ../scss/style.scss */
+.curry__side__item a {
+  color: #333333;
+}
+/* line 292, ../scss/style.scss */
+.curry__side__item:hover {
+  background-color: #333333;
+}
+/* line 294, ../scss/style.scss */
+.curry__side__item:hover a {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  /* line 286, ../scss/style.scss */
   .curry__side__item {
-    width: calc(100%/3 - 5px);
+    width: 25%;
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  /* line 286, ../scss/style.scss */
+  .curry__side__item {
+    width: 50%;
   }
 }
 
-@media (max-width: 640px) {
-  /* line 376, ../scss/style.scss */
-  .curry__side__item--title {
-    font-size: 17px;
-  }
+/* line 306, ../scss/style.scss */
+.curry__side__item__image {
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-/* line 383, ../scss/style.scss */
+/* line 316, ../scss/style.scss */
 .menu {
   text-align: center;
-  padding: 20px;
-  margin-top: 110px;
+  padding-bottom: 70px;
 }
-/* line 387, ../scss/style.scss */
-.menu section {
+
+/* line 320, ../scss/style.scss */
+.menu__group {
   background-color: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  margin: 40px;
+  vertical-align: middle;
+  padding-bottom: 10px;
 }
-/* line 389, ../scss/style.scss */
-.menu section h1 {
+
+/* line 327, ../scss/style.scss */
+.menu__group__header {
+  line-height: 70px;
   background-color: #fff;
+  color: #333333;
+}
+
+/* line 333, ../scss/style.scss */
+.menu__group__item {
+  font-size: 17px;
+  line-height: 46px;
+  margin: 10px 70px;
+}
+
+/* line 338, ../scss/style.scss */
+.map {
+  height: 700px;
+  background-color: rgba(51, 51, 51, 0.9);
   width: 100%;
+  height: 100%;
+}
+
+/* line 344, ../scss/style.scss */
+.map__wrapper {
+  width: 65%;
+  display: inline-block;
+}
+
+/* line 347, ../scss/style.scss */
+.map__image {
+  width: 100%;
+  padding: 40px;
+}
+
+/* line 351, ../scss/style.scss */
+.map__info {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 40px;
+  width: 30%;
+  color: #fff;
+}
+/* line 358, ../scss/style.scss */
+.map__info h1 {
+  display: inline;
+  font-weight: bold;
+}
+/* line 362, ../scss/style.scss */
+.map__info p {
+  font-size: 17px;
+  line-height: 34px;
+  letter-spacing: 1px;
 }
